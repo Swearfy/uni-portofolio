@@ -11,9 +11,53 @@ nav {
   gap: 1rem;
   font-size: 1.5rem;
   background-color: rgb(42, 41, 42);
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 36x;
 }
 
 a {
   text-decoration: none;
   color: #e9e9e9;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  height: 100svh;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+  padding-top: 100px;
+  width: 100%;
+  gap: 20px;
+  align-items: center;
+  color: #cac6c6;
+}
+
+h1,
+h2 {
+  margin: 0px;
+  padding: 0px;
+}
+.name {
+  font-size: 6rem;
+  text-align: center;
+}
+
+.subHeading {
+  font-size: 2rem;
+}
+
+.scrollDown {
+  width: 50px;
+  height: 50px;
+  min-height: 50px;
+  margin-bottom: 100px;
 }

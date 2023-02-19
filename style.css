@@ -9,12 +9,12 @@ nav {
   justify-content: center;
   padding: 1rem;
   gap: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   background-color: rgb(42, 41, 42);
   position: fixed;
   top: 0px;
   width: 100%;
-  height: 36x;
+  height: 36px;
 }
 
 a {
@@ -60,4 +60,15 @@ h2 {
   height: 50px;
   min-height: 50px;
   margin-bottom: 100px;
+  background-color: transparent;
+  border: transparent;
+}
+
+ion-icon {
+  font-size: 64px;
+  color: #6e6e6e;
+}
+
+.scrollDown > ion-icon:active {
+  font-size: 60px;
 }

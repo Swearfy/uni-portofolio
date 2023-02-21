@@ -180,3 +180,8 @@ p {
   border-radius: 16px;
   overflow-wrap: normal;
 }
+
+.githubButton > .buttonIcon:active,
+.liveButton:active {
+  opacity: 50%;
+}

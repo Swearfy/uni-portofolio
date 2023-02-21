@@ -145,3 +145,17 @@ li {
   background-color: #773a3c;
   padding: 6px;
 }
+
+p {
+  margin: 0px;
+  padding: 0px;
+}
+.projectImage {
+  width: 400px;
+}
+
+.boxButtons {
+  display: flex;
+  align-self: flex-end;
+  margin-right: 16px;
+}

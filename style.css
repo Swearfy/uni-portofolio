@@ -159,3 +159,24 @@ p {
   align-self: flex-end;
   margin-right: 16px;
 }
+
+.githubButton {
+  width: 36px;
+  height: 36px;
+  padding: 10px, 10px;
+  background-color: transparent;
+  cursor: pointer;
+  border: transparent;
+}
+
+.liveButton {
+  background-color: black;
+  border: none;
+  color: whitesmoke;
+  padding: 10px 10px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 16px;
+  overflow-wrap: normal;
+}

@@ -186,3 +186,7 @@ p {
 .liveButton:active {
   opacity: 50%;
 }
+
+.section3 {
+  height: auto;
+}

@@ -24,7 +24,8 @@ a {
 }
 
 .section1,
-.section2 {
+.section2,
+.section3 {
   display: flex;
   flex-direction: column;
   height: 100svh;
@@ -34,10 +35,12 @@ a {
 .section1 {
   justify-content: space-between;
 }
-.section2 {
+.section2,
+.section3 {
   gap: 48px;
 }
 
+/* section 1 */
 .hero {
   display: flex;
   flex-direction: column;
@@ -68,6 +71,7 @@ h2 {
   min-height: 50px;
   margin-bottom: 100px;
   background-color: transparent;
+  cursor: pointer;
   border: transparent;
 }
 
@@ -80,11 +84,14 @@ ion-icon {
   font-size: 60px;
 }
 
+/* section 2 */
 .skills {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #773a3c;
+  color: whitesmoke;
+  padding: 6px;
 }
 .skillList {
   display: flex;
@@ -112,4 +119,69 @@ li {
   width: 100%;
   height: 50%;
   background-color: #773a3c;
+}
+
+/* section 3 */
+.projectTitle {
+  background-color: #773a3c;
+  color: whitesmoke;
+  width: 100%;
+  text-align: center;
+}
+
+.cardContainer {
+  color: whitesmoke;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+}
+
+.projectCard {
+  width: 400px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #773a3c;
+  padding: 6px;
+}
+
+p {
+  margin: 0px;
+  padding: 0px;
+}
+.projectImage {
+  width: 400px;
+}
+
+.boxButtons {
+  display: flex;
+  align-self: flex-end;
+  margin-right: 16px;
+}
+
+.githubButton {
+  width: 36px;
+  height: 36px;
+  padding: 10px, 10px;
+  background-color: transparent;
+  cursor: pointer;
+  border: transparent;
+}
+
+.liveButton {
+  background-color: black;
+  border: none;
+  color: whitesmoke;
+  padding: 10px 10px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 16px;
+  overflow-wrap: normal;
+}
+
+.githubButton > .buttonIcon:active,
+.liveButton:active {
+  opacity: 50%;
 }

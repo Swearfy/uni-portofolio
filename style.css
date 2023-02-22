@@ -165,7 +165,8 @@ li {
   border: transparent;
 }
 
-.liveButton {
+.liveButton,
+#submitButton {
   background-color: black;
   border: none;
   color: whitesmoke;
@@ -178,7 +179,8 @@ li {
 }
 
 .githubButton > .buttonIcon:active,
-.liveButton:active {
+.liveButton:active,
+#submitButton:active {
   opacity: 50%;
 }
 
@@ -187,4 +189,21 @@ li {
 .contactForm {
   display: flex;
   flex-direction: column;
+  background-color: #773a3c;
+  padding: 16px;
+  width: 350px;
+  gap: 6px;
+}
+
+input,
+#description {
+  background-color: black;
+  border: 0;
+  color: whitesmoke;
+  padding: 16px;
+}
+
+#description {
+  height: 50px;
+  resize: none;
 }

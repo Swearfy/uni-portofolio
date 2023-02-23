@@ -30,7 +30,22 @@ a {
   color: #e9e9e9;
 }
 
-.welcomePage,
+button {
+  background-color: black;
+  border: none;
+  color: whitesmoke;
+  padding: 10px 10px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 16px;
+  overflow-wrap: normal;
+}
+
+button:active {
+  opacity: 50%;
+}
+
 section {
   display: flex;
   flex-direction: column;
@@ -38,6 +53,7 @@ section {
   margin: 48px 36px;
   gap: 48px;
 }
+
 .welcomePage {
   justify-content: space-between;
   height: 100svh;
@@ -160,25 +176,6 @@ li {
   background-color: transparent;
   cursor: pointer;
   border: transparent;
-}
-
-.liveButton,
-#submitButton {
-  background-color: black;
-  border: none;
-  color: whitesmoke;
-  padding: 10px 10px;
-  text-align: center;
-  display: inline-block;
-  cursor: pointer;
-  border-radius: 16px;
-  overflow-wrap: normal;
-}
-
-.githubButton > .buttonIcon:active,
-.liveButton:active,
-#submitButton:active {
-  opacity: 50%;
 }
 
 /* Contact me */

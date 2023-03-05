@@ -161,13 +161,16 @@ li {
 .buttonBox {
   display: flex;
   align-self: flex-end;
+  gap: 6px;
   margin-right: 16px;
 }
 
 .githubButton {
+  display: flex;
+  align-items: center;
   width: 36px;
   height: 36px;
-  padding: 10px, 10px;
+  padding: 0px;
   background-color: transparent;
   cursor: pointer;
   border: transparent;

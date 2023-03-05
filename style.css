@@ -80,22 +80,17 @@ section {
 }
 
 .scrollDown {
-  width: 50px;
-  height: 50px;
-  min-height: 50px;
+  width: 64px;
   margin-bottom: 100px;
   background-color: transparent;
   cursor: pointer;
   border: transparent;
+  padding: 0px;
 }
 
 ion-icon {
   font-size: 64px;
   color: #6e6e6e;
-}
-
-.scrollDown > ion-icon:active {
-  font-size: 60px;
 }
 
 /* About Me */

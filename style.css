@@ -12,17 +12,51 @@ p {
   padding: 0px;
 }
 
+/* Nav Bar */
+
+header {
+  position: fixed;
+  right: 0px;
+  top: 0px;
+}
+
 nav {
+  position: fixed;
   display: flex;
-  justify-content: center;
-  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
   gap: 1rem;
-  font-size: 1.3rem;
+  font-size: 6rem;
   background-color: rgb(42, 41, 42);
   position: fixed;
+  width: 0%;
+  height: 100svh;
+  height: 100vh;
+  padding-top: 150px;
+  overflow: hidden;
+  right: 0px;
   top: 0px;
-  width: 100%;
-  height: 36px;
+  transition: 0.5s;
+}
+
+nav #closeButton {
+  position: absolute;
+  top: 26px;
+  right: 26px;
+  font-size: 20px;
+  width: 46px;
+  height: 46px;
+}
+
+#navButton {
+  position: fixed;
+  justify-self: end;
+  position: absolute;
+  top: 26px;
+  right: 26px;
+  font-size: 20px;
+  width: 46px;
+  height: 46px;
 }
 
 a {
@@ -50,7 +84,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 48px 36px;
+  padding: 16px 36px;
   gap: 48px;
 }
 
@@ -63,11 +97,11 @@ section {
 .hero {
   display: flex;
   flex-direction: column;
-
   width: 100%;
   gap: 20px;
   align-items: center;
   color: #cac6c6;
+  margin-top: 46px;
 }
 
 .name {
@@ -81,15 +115,16 @@ section {
 
 .scrollDown {
   width: 64px;
-  margin-bottom: 100px;
+  height: 64px;
+  margin-bottom: 50px;
   background-color: transparent;
   cursor: pointer;
   border: transparent;
   padding: 0px;
+  font-size: 64px;
 }
 
 ion-icon {
-  font-size: 64px;
   color: #6e6e6e;
 }
 

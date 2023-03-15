@@ -24,6 +24,19 @@ a {
   text-decoration: none;
   color: #e9e9e9;
 }
+button:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+main {
+  padding: 6px;
+}
 
 nav {
   position: fixed;
@@ -112,10 +125,23 @@ section {
 .name {
   font-size: 6rem;
   text-align: center;
+  animation: nameAnim ease-in-out 0.6s normal;
 }
 
 .subHeading {
   font-size: 2rem;
+  animation: subHeadAnim ease-in-out 0.5s normal;
+}
+
+@keyframes nameAnim {
+  0% {
+    transform: translateY(-100%);
+  }
+}
+@keyframes subHeadAnim {
+  0% {
+    transform: translateY(-700%);
+  }
 }
 
 .scrollDown {
@@ -128,6 +154,7 @@ section {
   padding: 0px;
   text-transform: uppercase;
   font-size: large;
+  box-shadow: none;
 }
 
 .scrollDown img {
@@ -138,6 +165,7 @@ section {
 .scrollDown:hover {
   transform: translate(0, -10%);
   transition: ease 0.3s;
+  box-shadow: none;
 }
 
 .scrollDown:active {
@@ -155,6 +183,7 @@ section {
   color: whitesmoke;
   padding: 6px;
   width: 100%;
+  max-width: 1726px;
 }
 .skillList {
   display: flex;
@@ -176,8 +205,24 @@ li {
   align-items: center;
 }
 
+@keyframes slideAnim {
+  0% {
+    left: 0px;
+  }
+
+  50% {
+    left: -200px;
+  }
+
+  100% {
+    left: 0px;
+  }
+}
+
 .empty {
   width: 100%;
+  max-width: 1726px;
+
   height: 200px;
   background-color: #773a3c;
 }
@@ -187,6 +232,7 @@ li {
   background-color: #773a3c;
   color: whitesmoke;
   width: 100%;
+  max-width: 1726px;
   text-align: center;
 }
 
@@ -198,8 +244,7 @@ li {
 }
 
 .projectCard {
-  width: 400px;
-  height: auto;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -208,7 +253,7 @@ li {
 }
 
 .projectImage {
-  width: 400px;
+  max-width: 100%;
 }
 
 .buttonBox {
@@ -236,7 +281,7 @@ li {
   flex-direction: column;
   background-color: #773a3c;
   padding: 16px;
-  width: 350px;
+  width: 360px;
   gap: 6px;
 }
 
@@ -255,7 +300,8 @@ input,
 
 .contacts {
   background-color: #773a3c;
-  width: 350px;
+  width: 100%;
+  max-width: 1726px;
   height: 50px;
   display: flex;
   align-items: center;

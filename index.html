@@ -10,8 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
   </head>
+
   <body>
     <header>
       <button id="navButton">&#9776;</button>
@@ -34,80 +36,75 @@
           <img
             src="./img/caret-down-solid.svg"
             alt="arrow down icon"
-            srcset="" />
+            srcset=""
+          />
         </button>
       </section>
       <section>
         <div class="mySkills">
           <h1>Skills and tools</h1>
-          <ul class="skillList">
-            <li>
-              <img
-                class="skillIcon"
-                src="./img/js.svg"
-                alt="javascript logo" />JavaScript
-            </li>
-            <li>
-              <img
-                class="skillIcon"
-                src="./img/html5.svg"
-                alt="html logo" />HTML5
-            </li>
-            <li>
-              <img
-                class="skillIcon"
-                src="./img/css3-alt.svg"
-                alt="css logo" />CSS3
-            </li>
-            <li>
+          <div class="skillList">
+            <div>
+              <img class="skillIcon" src="./img/js.svg" alt="javascript logo" />
+              <span>JavaScript</span>
+            </div>
+            <div>
+              <img class="skillIcon" src="./img/html5.svg" alt="html logo" />
+              <span>HTML5</span>
+            </div>
+            <div>
+              <img class="skillIcon" src="./img/css3-alt.svg" alt="css logo" />
+              <span>CSS3</span>
+            </div>
+            <div>
               <img
                 class="skillIcon"
                 src="./img/vs-code.svg"
-                alt="vscode logo" />VSCODE
-            </li>
-            <li>
-              <img
-                class="skillIcon"
-                src="./img/git-alt.svg"
-                alt="git logo" />GIT
-            </li>
-            <li>
-              <img
-                class="skillIcon"
-                src="./img/github.svg"
-                alt="github logo" />GITHUB
-            </li>
-            <li>
-              <img
-                class="skillIcon"
-                src="./img/figma.svg"
-                alt="figma logo" />FIGMA
-            </li>
-            <li>
+                alt="vscode logo"
+              />
+              <span>VSCODE</span>
+            </div>
+            <div>
+              <img class="skillIcon" src="./img/git-alt.svg" alt="git logo" />
+              <span>GIT</span>
+            </div>
+            <div>
+              <img class="skillIcon" src="./img/github.svg" alt="github logo" />
+              <span>GITHUB</span>
+            </div>
+            <div>
+              <img class="skillIcon" src="./img/figma.svg" alt="figma logo" />
+              <span>FIGMA</span>
+            </div>
+            <div>
               <img
                 class="skillIcon"
                 src="./img/node-js.svg"
-                alt="node.js logo" />NODE.JS
-            </li>
-            <li>
+                alt="node.js logo"
+              />
+              <span>NODE.JS</span>
+            </div>
+            <div>
               <img
                 class="skillIcon"
                 src="./img/mongodb.svg"
-                alt="mongodb logo" />MONGODB
-            </li>
-            <li>
-              <img
-                class="skillIcon"
-                src="./img/kotlin.svg"
-                alt="kotlin logo" />KOTLIN
-            </li>
-            <li>
+                alt="mongodb logo"
+              />
+              <span>MONGODB</span>
+            </div>
+            <div>
+              <img class="skillIcon" src="./img/kotlin.svg" alt="kotlin logo" />
+              <span>KOTLIN</span>
+            </div>
+            <div>
               <img
                 class="skillIcon"
                 src="./img/scala(1).svg"
-                alt="scala logo" />SCALA
-            </li>
-          </ul>
+                alt="scala logo"
+              />
+              <span>SCALA</span>
+            </div>
+          </div>
         </div>
         <div class="empty"></div>
       </section>
@@ -172,33 +169,45 @@
             id="email"
             type="email"
             placeholder="Mark123@gmail.com"
-            required />
+            required
+          />
           <label for="subject">Subject</label>
           <input
             id="subject"
             type="text"
             placeholder="I want you to"
-            required />
+            required
+          />
           <label for="description">Description</label>
           <textarea
             id="description"
             placeholder="MAKE ME WEBSITE"
-            required></textarea>
+            required
+          ></textarea>
           <button id="submitButton" type="submit">Send</button>
         </form>
 
         <div class="contacts">
-          <a class="link"
-            ><img
+          <a class="link">
+            <img class="contactIcon" src="./img/github.svg" alt="github logo" />
+            Github
+          </a>
+          <a class="link">
+            <img
               class="contactIcon"
-              src="./img/github.svg"
-              alt="github logo" />
-            Github</a
-          >
-          <a class="link"
-            ><img class="contactIcon" src="#" alt="linkedin logo" /> LinkedIn</a
-          >
-          <a class="link">Mail</a>
+              src="./img/linkedin.svg"
+              alt="linkedin logo"
+            />
+            LinkedIn
+          </a>
+          <a class="link">
+            <img
+              class="contactIcon"
+              src="./img/envelope-solid.svg"
+              alt="email"
+            />
+            Mail
+          </a>
         </div>
       </section>
     </main>

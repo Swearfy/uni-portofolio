@@ -14,7 +14,7 @@
   </head>
   <body>
     <header>
-      <button id="navButton">&#9776</button>
+      <button id="navButton">&#9776;</button>
       <nav id="navBar">
         <button id="closeButton">X</button>
         <a href="">Home</a>
@@ -30,12 +30,16 @@
           <h2 class="subHeading">Full Stack Developer</h2>
         </div>
         <button class="scrollDown" type="button">
-          <ion-icon name="caret-down-outline"></ion-icon>
+          <a href="">Scroll</a>
+          <img
+            src="./img/caret-down-solid.svg"
+            alt="arrow down icon"
+            srcset="" />
         </button>
       </section>
       <section>
         <div class="mySkills">
-          <h1>My skills and tools</h1>
+          <h1>Skills and tools</h1>
           <ul class="skillList">
             <li>
               <img
@@ -178,7 +182,6 @@
           <label for="description">Description</label>
           <textarea
             id="description"
-            type="textarea"
             placeholder="MAKE ME WEBSITE"
             required></textarea>
           <button id="submitButton" type="submit">Send</button>
@@ -201,11 +204,5 @@
     </main>
 
     <script src="/js/main.js"></script>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
 </html>

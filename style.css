@@ -20,12 +20,17 @@ header {
   top: 0px;
 }
 
+a {
+  text-decoration: none;
+  color: #e9e9e9;
+}
+
 nav {
   position: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 5rem;
   font-size: 6rem;
   background-color: rgb(42, 41, 42);
   position: fixed;
@@ -36,7 +41,8 @@ nav {
   overflow: hidden;
   right: 0px;
   top: 0px;
-  transition: 0.5s;
+  transition: ease-in 0.3s;
+  text-transform: uppercase;
 }
 
 nav #closeButton {
@@ -59,9 +65,12 @@ nav #closeButton {
   height: 46px;
 }
 
-a {
-  text-decoration: none;
-  color: #e9e9e9;
+nav a:hover {
+  background-color: #3a393a;
+  width: 100%;
+  text-align: center;
+  transition: ease-in 0.2s;
+  transform: translate(0, -5%);
 }
 
 button {
@@ -74,10 +83,6 @@ button {
   cursor: pointer;
   border-radius: 16px;
   overflow-wrap: normal;
-}
-
-button:active {
-  opacity: 50%;
 }
 
 section {
@@ -121,11 +126,24 @@ section {
   cursor: pointer;
   border: transparent;
   padding: 0px;
-  font-size: 64px;
+  text-transform: uppercase;
+  font-size: large;
 }
 
-ion-icon {
-  color: #6e6e6e;
+.scrollDown img {
+  padding: 0px;
+  margin-top: -30px;
+}
+
+.scrollDown:hover {
+  transform: translate(0, -10%);
+  transition: ease 0.3s;
+}
+
+.scrollDown:active {
+  width: 60px;
+  height: 60px;
+  font-size: medium;
 }
 
 /* About Me */
@@ -136,14 +154,14 @@ ion-icon {
   background-color: #773a3c;
   color: whitesmoke;
   padding: 6px;
+  width: 100%;
 }
 .skillList {
   display: flex;
-  width: 100%;
-  flex-wrap: wrap;
   padding: 0px;
   gap: 16px;
-  justify-content: center;
+  overflow-x: auto;
+  width: 100%;
 }
 
 .skillIcon {

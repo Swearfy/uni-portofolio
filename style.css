@@ -78,24 +78,20 @@ nav #closeButton {
   height: 46px;
 }
 
-nav a:hover {
+nav button {
+  background-color: transparent;
+  text-align: center;
+  font-size: 46px;
+}
+
+nav button:hover {
   background-color: #3a393a;
   width: 100%;
   text-align: center;
   transition: ease-in 0.2s;
   transform: translate(0, -5%);
-}
-
-button {
-  background-color: black;
-  border: none;
-  color: whitesmoke;
-  padding: 10px 10px;
-  text-align: center;
-  display: inline-block;
   cursor: pointer;
-  border-radius: 16px;
-  overflow-wrap: normal;
+  border-radius: 0px;
 }
 
 section {
@@ -106,7 +102,19 @@ section {
   gap: 48px;
 }
 
-.welcomePage {
+button,
+#closeButton {
+  background-color: black;
+  border: none;
+  color: whitesmoke;
+  padding: 10px 10px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 16px;
+  overflow-wrap: normal;
+}
+
+#welcomePage {
   justify-content: space-between;
   height: 100svh;
 }

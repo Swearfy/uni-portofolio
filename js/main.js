@@ -7,3 +7,7 @@ document.getElementById("closeButton").addEventListener("click", function () {
   document.getElementById("navBar").style.width = "0%";
   document.querySelector("body").style.overflow = "auto";
 });
+
+document.getElementById("scrollDown").addEventListener("click", function () {
+  document.getElementById("mySkills").scrollIntoView({ behavior: "smooth" });
+});

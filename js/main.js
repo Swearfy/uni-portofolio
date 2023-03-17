@@ -50,3 +50,12 @@ document
   .addEventListener("click", function () {
     window.open("https://www.linkedin.com/in/dennispaulpuscasu/");
   });
+
+document.getElementById("emailLink").addEventListener("click", function () {
+  // document.getElementById("myPopup").style.visibility = "visible";
+  document.getElementById("myPopup").classList.add("emailAnim");
+  navigator.clipboard.writeText("swearfy@gmail.com");
+  setTimeout(() => {
+    document.getElementById("myPopup").classList.remove("emailAnim");
+  }, 1500);
+});

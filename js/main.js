@@ -1,5 +1,6 @@
 const navBar = document.getElementById("navBar");
 const body = document.querySelector("body");
+const popup = document.getElementById("popup");
 
 document.getElementById("navButton").addEventListener("click", function () {
   navBar.style.width = "100%";
@@ -52,10 +53,9 @@ document
   });
 
 document.getElementById("emailLink").addEventListener("click", function () {
-  // document.getElementById("myPopup").style.visibility = "visible";
-  document.getElementById("popup").classList.add("emailAnim");
+  popup.classList.add("emailAnim");
   navigator.clipboard.writeText("swearfy@gmail.com");
   setTimeout(() => {
-    document.getElementById("popup").classList.remove("emailAnim");
+    popup.classList.remove("emailAnim");
   }, 1500);
 });

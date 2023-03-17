@@ -3,6 +3,7 @@ body {
   padding: 0;
   background-color: #3a393a;
   font-family: "Oswald", sans-serif;
+  position: relative;
 }
 
 h1,
@@ -18,6 +19,7 @@ header {
   position: fixed;
   right: 0px;
   top: 0px;
+  position: relative;
 }
 
 a {
@@ -36,10 +38,12 @@ button:active {
 
 main {
   padding: 6px;
+  position: relative;
 }
 
 nav {
   position: fixed;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -56,6 +60,7 @@ nav {
   top: 0px;
   transition: ease-in 0.3s;
   text-transform: uppercase;
+  z-index: 2;
 }
 
 nav #closeButton {
@@ -76,6 +81,7 @@ nav #closeButton {
   font-size: 20px;
   width: 46px;
   height: 46px;
+  z-index: 2;
 }
 
 nav button {
@@ -100,6 +106,7 @@ section {
   align-items: center;
   padding: 16px 36px;
   gap: 48px;
+  position: relative;
 }
 
 button,
@@ -152,10 +159,15 @@ button,
   }
 }
 
-#scrollDown {
-  width: 64px;
-  height: 64px;
+.welcomePageButton {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 50px;
+  gap: 16px;
+  z-index: 1;
+}
+.welcomePageButton button {
   background-color: transparent;
   cursor: pointer;
   border: transparent;
@@ -163,23 +175,36 @@ button,
   text-transform: uppercase;
   font-size: large;
   box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcomePageButton a {
+  position: absolute;
+  font-size: 0.9rem;
+}
+
+#contactme {
+  justify-content: center;
+}
+#scrollDown a {
+  padding-top: 10px;
+}
+
+#contactme img {
+  width: 100px;
+  height: 40px;
 }
 
 #scrollDown img {
-  padding: 0px;
-  margin-top: -30px;
+  width: 100px;
 }
 
-#scrollDown:hover {
-  transform: translate(0, -10%);
+.welcomePageButton button:hover {
+  transform: translate(0%, -10%);
   transition: ease 0.3s;
   box-shadow: none;
-}
-
-#scrollDown:active {
-  width: 60px;
-  height: 60px;
-  font-size: medium;
 }
 
 /* About Me */
@@ -335,6 +360,7 @@ input,
 }
 
 #popup {
+  visibility: hidden;
   background-color: #555;
   color: #fff;
   text-align: center;

@@ -334,24 +334,23 @@ input,
   box-shadow: none;
 }
 
-#myPopup {
+#popup {
   background-color: #555;
   color: #fff;
   text-align: center;
   border-radius: 6px;
   padding: 6px;
   position: absolute;
-  z-index: 1;
   bottom: 100%;
   left: 90%;
   margin-left: -80px;
 }
 
-#emailLink:hover #myPopup {
+#emailLink:hover #popup {
   visibility: hidden;
 }
 
-#myPopup::after {
+#popup::after {
   content: "";
   position: absolute;
   top: 100%;

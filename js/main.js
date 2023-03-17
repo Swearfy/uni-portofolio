@@ -53,9 +53,9 @@ document
 
 document.getElementById("emailLink").addEventListener("click", function () {
   // document.getElementById("myPopup").style.visibility = "visible";
-  document.getElementById("myPopup").classList.add("emailAnim");
+  document.getElementById("popup").classList.add("emailAnim");
   navigator.clipboard.writeText("swearfy@gmail.com");
   setTimeout(() => {
-    document.getElementById("myPopup").classList.remove("emailAnim");
+    document.getElementById("popup").classList.remove("emailAnim");
   }, 1500);
 });

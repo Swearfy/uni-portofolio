@@ -334,6 +334,53 @@ input,
   box-shadow: none;
 }
 
+#myPopup {
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 90%;
+  margin-left: -80px;
+}
+
+#emailLink:hover #myPopup {
+  visibility: hidden;
+}
+
+#myPopup::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.emailAnim {
+  animation: fadeIn 2s ease-in-out normal;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  50% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 .contactIcon {
   width: 40px;
   height: 40px;

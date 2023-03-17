@@ -16,6 +16,12 @@ document.getElementById("scrollDown").addEventListener("click", function () {
   document.getElementById("mySkills").scrollIntoView({ behavior: "smooth" });
 });
 
+document.getElementById("contactme").addEventListener("click", function () {
+  document
+    .getElementById("contactSection")
+    .scrollIntoView({ behavior: "smooth" });
+});
+
 document.getElementById("mainPage").addEventListener("click", function () {
   document.getElementById("welcomePage").scrollIntoView({ behavior: "smooth" });
   navBar.style.width = "0%";

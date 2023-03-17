@@ -43,7 +43,7 @@ document.getElementById("contactPage").addEventListener("click", function () {
 });
 
 document.getElementById("gitHubProfile").addEventListener("click", function () {
-  window.open("https://github.com/Swearfy?tab=repositories");
+  window.open("https://github.com/Swearfy");
 });
 
 document
@@ -58,4 +58,16 @@ document.getElementById("emailLink").addEventListener("click", function () {
   setTimeout(() => {
     popup.classList.remove("emailAnim");
   }, 1500);
+});
+
+document.getElementById("project1").addEventListener("click", function () {
+  window.open("https://github.com/Swearfy/Project-GameV2");
+});
+
+document.getElementById("project2").addEventListener("click", function () {
+  window.open("https://github.com/Swearfy/SurveyApp");
+});
+
+document.getElementById("project3").addEventListener("click", function () {
+  window.open("https://github.com/Swearfy/Module_Chooser");
 });

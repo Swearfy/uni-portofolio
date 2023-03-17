@@ -180,7 +180,7 @@ button,
   align-items: center;
 }
 
-.welcomePageButton a {
+.welcomePageButton span {
   position: absolute;
   font-size: 0.9rem;
 }
@@ -188,7 +188,7 @@ button,
 #contactme {
   justify-content: center;
 }
-#scrollDown a {
+#scrollDown span {
   padding-top: 10px;
 }
 

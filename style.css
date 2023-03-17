@@ -323,6 +323,16 @@ input,
   justify-content: center;
   gap: 26px;
 }
+.contacts button {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.contacts button:hover {
+  box-shadow: none;
+}
 
 .contactIcon {
   width: 40px;

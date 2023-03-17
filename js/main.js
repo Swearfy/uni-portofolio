@@ -40,3 +40,13 @@ document.getElementById("contactPage").addEventListener("click", function () {
   navBar.style.width = "0%";
   body.style.overflow = "auto";
 });
+
+document.getElementById("gitHubProfile").addEventListener("click", function () {
+  window.open("https://github.com/Swearfy?tab=repositories");
+});
+
+document
+  .getElementById("linkedinProfile")
+  .addEventListener("click", function () {
+    window.open("https://www.linkedin.com/in/dennispaulpuscasu/");
+  });

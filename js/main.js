@@ -13,7 +13,7 @@ document.getElementById("closeButton").addEventListener("click", function () {
 });
 
 document.getElementById("scrollDown").addEventListener("click", function () {
-  document.getElementById("mySkills").scrollIntoView({ behavior: "smooth" });
+  document.getElementById("skills").scrollIntoView({ behavior: "smooth" });
 });
 
 document.getElementById("contactme").addEventListener("click", function () {

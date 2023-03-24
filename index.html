@@ -11,6 +11,17 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap"
       rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
+      rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nabla&display=swap"
+      rel="stylesheet" />
   </head>
 
   <body>
@@ -18,10 +29,12 @@
       <button id="navButton">&#9776;</button>
       <nav id="navBar">
         <button id="closeButton">X</button>
-        <button id="mainPage">Home</button>
-        <button id="skillPage">Skills</button>
-        <button id="projectPage">Projects</button>
-        <button id="contactPage">Contact</button>
+        <div>
+          <button id="mainPage">Home</button>
+          <button id="skillPage">Skills</button>
+          <button id="projectPage">Projects</button>
+          <button id="contactPage">Contact</button>
+        </div>
       </nav>
     </header>
     <main>
@@ -173,25 +186,33 @@
         <h1 id="contactSection" class="sectionTitle">Contact</h1>
         <h1>Get in Touch</h1>
         <form class="contactForm">
-          <label for="fullName">Name</label>
-          <input id="fullName" type="text" placeholder="Mark" required />
-          <label for="email">Email</label>
-          <input
-            id="email"
-            type="email"
-            placeholder="Mark123@gmail.com"
-            required />
-          <label for="subject">Subject</label>
-          <input
-            id="subject"
-            type="text"
-            placeholder="I want you to"
-            required />
-          <label for="description">Description</label>
-          <textarea
-            id="description"
-            placeholder="MAKE ME WEBSITE"
-            required></textarea>
+          <div>
+            <label for="fullName">Name</label>
+            <input id="fullName" type="text" placeholder="Mark" required />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="Mark123@gmail.com"
+              required />
+          </div>
+          <div>
+            <label for="subject">Subject</label>
+            <input
+              id="subject"
+              type="text"
+              placeholder="I want you to"
+              required />
+          </div>
+          <div>
+            <label for="description">Description</label>
+            <textarea
+              id="description"
+              placeholder="MAKE ME WEBSITE"
+              required></textarea>
+          </div>
           <button id="submitButton" type="submit">Send</button>
         </form>
 

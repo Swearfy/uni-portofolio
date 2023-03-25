@@ -4,59 +4,43 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Dennis Portofolio</title>
     <link rel="stylesheet" type="text/css" href="./style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap"
-      rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
-      rel="stylesheet" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nabla&display=swap"
-      rel="stylesheet" />
   </head>
 
   <body>
     <header>
-      <button id="navButton">&#9776;</button>
+      <button type="button" id="burgerButton">&#9776;</button>
       <nav id="navBar">
-        <button id="closeButton">X</button>
+        <button type="button" id="burgerClose">X</button>
         <div>
-          <button id="mainPage">Home</button>
-          <button id="skillPage">Skills</button>
-          <button id="projectPage">Projects</button>
-          <button id="contactPage">Contact</button>
+          <button type="button" id="home-btn">Home</button>
+          <button type="button" id="home-btn">About</button>
+          <button type="button" id="home-btn">Projects</button>
+          <button type="button" id="home-btn">Contact</button>
         </div>
       </nav>
     </header>
     <main>
-      <section id="welcomePage">
+      <section id="introPage">
         <div class="hero">
           <h1 class="name">Dennis Puscasu</h1>
-          <h2 class="subHeading">Some developer idk tbh</h2>
-        </div>
-        <div class="welcomePageButton">
-          <button id="contactme" type="button">
+          <h2 class="subHeading">Some developer idk</h2>
+          <button id="contactMe-btn" type="button">
             <span>Contact Me!</span>
             <img src="./img/rectangle_box.svg" alt="arrow down icon" />
           </button>
+        </div>
+        <div id="scroll-btn-box">
+          <span>Check Projects!</span>
           <button id="scrollDown" type="button">
-            <span>Scroll</span>
             <img src="./img/arrowdown.svg" alt="arrow down icon" />
           </button>
         </div>
       </section>
-      <section id="skills">
+      <section>
+        <h1 id="skills" class="sectionTitle">Skills and tools</h1>
         <div id="mySkills">
-          <h1>Skills and tools</h1>
           <div class="skillList">
             <div>
               <img class="skillIcon" src="./img/js.svg" alt="javascript logo" />
@@ -126,8 +110,8 @@
           </p>
         </div>
       </section>
-      <section id="projects">
-        <h1 class="sectionTitle">Projects</h1>
+      <section>
+        <h1 id="projects" class="sectionTitle">Projects</h1>
         <div class="cardContainer">
           <div class="projectCard">
             <img

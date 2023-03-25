@@ -32,7 +32,7 @@ button {
   padding: 10px 10px;
   text-align: center;
   cursor: pointer;
-  border-radius: 16px;
+  border-radius: 6px;
   overflow-wrap: normal;
 }
 
@@ -49,6 +49,9 @@ button:active {
 main {
   padding: 6px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
 }
 
 nav {
@@ -208,8 +211,15 @@ section {
 
 @keyframes buttonPop {
   0% {
-    transform: translateY(100%);
+    transform: translateY(50%);
+    opacity: 0;
   }
+}
+
+.sectionTitle {
+  color: #cac6c6;
+  font-family: "Lilita One", cursive;
+  align-self: flex-start;
 }
 
 /* About Me */
@@ -217,16 +227,9 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #773a3c;
   color: #d8d2d2;
   width: 100%;
-  max-width: 1726px;
-  border: #000000 solid;
   position: relative;
-}
-
-#mySkills h1 {
-  font-family: "Lilita One", cursive;
 }
 
 .skillList {
@@ -251,94 +254,73 @@ section {
   align-items: center;
 }
 
-@keyframes slideAnim {
-  0% {
-    left: 0px;
-  }
-
-  50% {
-    left: -200px;
-  }
-
-  100% {
-    left: 0px;
-  }
-}
-
-.aboutMe {
-  width: 100%;
-  max-width: 1726px;
-  background-color: #773a3c;
+.container-about {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  font-size: larger;
-  border: #000000 solid;
-  margin-bottom: 64px;
+  gap: 70px;
+  font-size: x-large;
+  text-align: center;
+}
+.container-about div {
+  display: flex;
+  justify-content: space-between;
 }
 
-.aboutMe h1 {
+.container-about h1 {
   font-family: "Lilita One", cursive;
-}
-.aboutMe h1,
-p {
-  margin: 20px 20px;
 }
 
 /* Projects */
-.sectionTitle {
-  background-color: #773a3c;
-  color: #cac6c6;
-  width: 100%;
-  max-width: 1726px;
-  text-align: center;
-  border: #000000 solid;
-  font-family: "Lilita One", cursive;
-  padding: 12px 0px;
-}
 
-.cardContainer {
+.container-cards {
   display: flex;
   align-items: center;
   justify-content: center;
   color: #d8d2d2;
-  display: flex;
   flex-wrap: wrap;
-  gap: 64px;
-  margin-bottom: 64px;
 }
 
-.projectCard {
+.project-card {
   max-width: 500px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-color: #773a3c;
-  padding: 6px;
-  border: #000000 solid;
+  gap: 32px;
 }
 
 .projectImage {
   max-width: 100%;
-  border: #000000 solid;
+}
+
+.project-desc {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.project-desc p {
+  grid-column: 1;
 }
 
 .buttonBox {
-  display: flex;
-  align-self: flex-end;
-  gap: 16px;
-  margin-right: 16px;
+  display: grid;
+  grid-column: 2;
+  grid-row: 2;
+  grid-template-columns: 1fr 1fr;
 }
 
-.githubButton {
-  display: flex;
-  align-items: center;
-  width: 36px;
-  height: 36px;
-  padding: 0px;
+.buttonBox button {
+  width: 60px;
+  height: 60px;
+}
+.github-button {
   background-color: transparent;
   cursor: pointer;
   border: transparent;
+  padding: 0px;
+}
+
+.github-button:hover {
+  box-shadow: none;
 }
 
 /* Contact me */
@@ -371,28 +353,6 @@ input,
 #description {
   height: 50px;
   resize: none;
-}
-
-.contacts {
-  background-color: #773a3c;
-  width: 100%;
-  max-width: 1726px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 32px;
-  border: #000000 solid;
-}
-.contacts button {
-  background-color: transparent;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.contacts button:hover {
-  box-shadow: none;
 }
 
 #popup {
@@ -442,19 +402,5 @@ input,
   }
 }
 
-.contactIcon {
-  width: 40px;
-  height: 40px;
-}
-
-.link {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
 @media screen and (min-width: 500px) {
-  .contactForm {
-    justify-self: end;
-  }
 }

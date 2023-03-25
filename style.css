@@ -311,8 +311,8 @@ section {
 }
 
 .project-desc-right button {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
 }
 .github-button {
   background-color: transparent;
@@ -327,18 +327,41 @@ section {
 
 /* Contact me */
 
+#contact-Section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-content: center;
+}
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.contact-links button {
+  background-color: transparent;
+  font-size: x-large;
+  display: flex;
+  gap: 32px;
+  box-shadow: none;
+}
+.contact-links button img {
+  padding: 0px;
+  width: 50px;
+}
+
 .contactForm {
   display: flex;
   flex-direction: column;
-  width: 360px;
   gap: 16px;
-  align-items: center;
   align-self: center;
 }
 
 .contactForm button {
   width: 300px;
   margin-bottom: 16px;
+  align-self: center;
 }
 
 input,
@@ -405,6 +428,12 @@ input,
     opacity: 0;
     visibility: hidden;
   }
+}
+
+footer {
+  width: 100%;
+  background-color: grey;
+  text-align: center;
 }
 
 @media screen and (min-width: 500px) {

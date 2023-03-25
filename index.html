@@ -189,43 +189,55 @@
       </section>
       <section>
         <h1 id="contactSection" class="sectionTitle">Contact</h1>
-        <div class="contact-links">
-          <a href="#">Github</a>
-          <a href="">Email</a>
-          <a href="">Linkedin</a>
+        <div id="contact-Section">
+          <div class="contact-links">
+            <button type="button">
+              <img src="./img/github.svg" alt="github logo" />
+              Swearfy
+            </button>
+            <button type="button">
+              <img src="./img/linkedin.svg" alt="linkedin logo" />
+              dennispaulpuscasu
+            </button>
+            <button type="button">
+              <img src="./img/envelope-solid.svg" alt="email logo" />
+              swearfy@gmail.com
+            </button>
+          </div>
+          <form class="contactForm">
+            <div>
+              <label for="full-Name">Name</label>
+              <input id="full-Name" type="text" placeholder="Mark" required />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input
+                id="email"
+                type="email"
+                placeholder="Mark123@gmail.com"
+                required />
+            </div>
+            <div>
+              <label for="subject">Subject</label>
+              <input
+                id="subject"
+                type="text"
+                placeholder="I want you to"
+                required />
+            </div>
+            <div>
+              <label for="description">Description</label>
+              <textarea
+                id="description"
+                placeholder="MAKE ME WEBSITE"
+                required></textarea>
+            </div>
+            <button id="submitButton" type="submit">Send</button>
+          </form>
         </div>
-        <form class="contactForm">
-          <div>
-            <label for="full-Name">Name</label>
-            <input id="full-Name" type="text" placeholder="Mark" required />
-          </div>
-          <div>
-            <label for="email">Email</label>
-            <input
-              id="email"
-              type="email"
-              placeholder="Mark123@gmail.com"
-              required />
-          </div>
-          <div>
-            <label for="subject">Subject</label>
-            <input
-              id="subject"
-              type="text"
-              placeholder="I want you to"
-              required />
-          </div>
-          <div>
-            <label for="description">Description</label>
-            <textarea
-              id="description"
-              placeholder="MAKE ME WEBSITE"
-              required></textarea>
-          </div>
-          <button id="submitButton" type="submit">Send</button>
-        </form>
       </section>
     </main>
+    <footer>Made by Swearfy</footer>
 
     <script src="/js/main.js"></script>
   </body>

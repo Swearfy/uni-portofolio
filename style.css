@@ -1,31 +1,41 @@
 body {
-  margin: 0;
-  padding: 0;
   background-color: #2a2d2f;
   font-family: "Oswald", sans-serif;
   position: relative;
 }
 
+body,
 h1,
 h2,
 p {
-  margin: 0px;
-  padding: 0px;
-}
-
-/* Nav Bar */
-
-header {
-  position: fixed;
-  right: 0px;
-  top: 0px;
-  position: relative;
+  margin: 0;
+  padding: 0;
 }
 
 a {
   text-decoration: none;
   color: #e9e9e9;
 }
+
+/* Nav Bar */
+
+header {
+  right: 0px;
+  top: 0px;
+  position: relative;
+}
+
+button {
+  background-color: black;
+  border: none;
+  color: whitesmoke;
+  padding: 10px 10px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 16px;
+  overflow-wrap: normal;
+}
+
 button:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
   transform: translateY(-2px);
@@ -43,22 +53,15 @@ main {
 
 nav {
   position: fixed;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5rem;
   background-color: rgba(42, 41, 42, 0.9);
-  position: fixed;
   width: 0%;
   height: 100svh;
   height: 100vh;
   padding-top: 150px;
-  overflow: hidden;
-  right: 0px;
-  top: 0px;
   transition: ease-in 0.3s;
   text-transform: uppercase;
   z-index: 2;
+  overflow: hidden;
 }
 
 nav div {
@@ -69,17 +72,18 @@ nav div {
   margin-top: 20px;
 }
 
-nav #closeButton {
+#burgerClose {
   position: absolute;
   top: 26px;
   right: 26px;
   font-size: 20px;
   width: 46px;
   height: 46px;
-  margin-top: 0px;
+  background-color: #000000;
+  border-radius: 16px;
 }
 
-#navButton {
+#burgerButton {
   position: fixed;
   justify-self: end;
   top: 26px;
@@ -109,31 +113,19 @@ nav button:hover {
 section {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 16px 36px;
-  gap: 64px;
   position: relative;
-}
-
-button,
-#closeButton {
-  background-color: black;
-  border: none;
-  color: whitesmoke;
-  padding: 10px 10px;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 16px;
-  overflow-wrap: normal;
-}
-
-#welcomePage {
-  justify-content: space-between;
-  height: 100svh;
-  font-family: "Lilita One", cursive;
+  padding: 0px 36px;
+  gap: 64px;
 }
 
 /* Welcome page */
+#introPage {
+  justify-content: space-between;
+  height: 100svh;
+  font-family: "Lilita One", cursive;
+  align-items: center;
+}
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -166,52 +158,58 @@ button,
   }
 }
 
-.welcomePageButton {
-  position: relative;
+#contactMe-btn {
   display: flex;
   flex-direction: column;
-  margin-bottom: 70px;
-  gap: 26px;
-  z-index: 1;
+  justify-content: center;
+  margin-top: 64px;
+  animation: subHeadAnim ease-in-out 0.4s normal;
 }
-.welcomePageButton button {
+
+#contactMe-btn img {
+  width: 100px;
+  height: 10px;
+}
+
+#scrollDown {
+  position: relative;
   background-color: transparent;
   cursor: pointer;
   border: transparent;
-  padding: 0px;
   text-transform: uppercase;
-  font-size: large;
-  box-shadow: none;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.welcomePageButton span {
-  position: absolute;
-  font-size: 0.9rem;
-}
-
-#contactme {
-  justify-content: center;
-}
-#scrollDown span {
-  padding-top: 10px;
-}
-
-#contactme img {
-  width: 100px;
-  height: 40px;
+  margin-bottom: 70px;
+  z-index: 1;
+  font-size: 1rem;
+  gap: 20px;
 }
 
 #scrollDown img {
   width: 100px;
 }
 
-.welcomePageButton button:hover {
-  transform: translate(0%, -10%);
-  transition: ease 0.3s;
+#scroll-btn-box {
+  animation: buttonPop ease-in-out 0.6s normal;
+}
+#scroll-btn-box,
+#scrollDown {
   box-shadow: none;
+  transition: ease 0.3s;
+}
+#scroll-btn-box:hover {
+  transform: translate(0%, -10%);
+}
+
+#scrollDown:active {
+  transform: translate(0%, 10%);
+}
+
+@keyframes buttonPop {
+  0% {
+    transform: translateY(100%);
+  }
 }
 
 /* About Me */
@@ -223,7 +221,6 @@ button,
   color: #d8d2d2;
   width: 100%;
   max-width: 1726px;
-  margin-top: 120px;
   border: #000000 solid;
   position: relative;
 }
@@ -277,6 +274,7 @@ button,
   align-items: center;
   font-size: larger;
   border: #000000 solid;
+  margin-bottom: 64px;
 }
 
 .aboutMe h1 {
@@ -296,13 +294,18 @@ p {
   text-align: center;
   border: #000000 solid;
   font-family: "Lilita One", cursive;
+  padding: 12px 0px;
 }
 
 .cardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #d8d2d2;
   display: flex;
   flex-wrap: wrap;
   gap: 64px;
+  margin-bottom: 64px;
 }
 
 .projectCard {
@@ -450,5 +453,8 @@ input,
   gap: 16px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
+  .contactForm {
+    justify-self: end;
+  }
 }

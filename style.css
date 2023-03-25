@@ -211,7 +211,7 @@ section {
 
 @keyframes buttonPop {
   0% {
-    transform: translateY(50%);
+    transform: translateY(100%);
     opacity: 0;
   }
 }
@@ -278,6 +278,7 @@ section {
   justify-content: center;
   color: #d8d2d2;
   flex-wrap: wrap;
+  gap: 100px;
 }
 
 .project-card {
@@ -292,23 +293,24 @@ section {
 }
 
 .project-desc {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  display: flex;
 }
 
-.project-desc p {
-  grid-column: 1;
+.project-desc-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.buttonBox {
+.project-desc-right {
   display: grid;
   grid-column: 2;
   grid-row: 2;
   grid-template-columns: 1fr 1fr;
+  gap: 6px;
 }
 
-.buttonBox button {
+.project-desc-right button {
   width: 60px;
   height: 60px;
 }
@@ -331,6 +333,7 @@ section {
   width: 360px;
   gap: 16px;
   align-items: center;
+  align-self: center;
 }
 
 .contactForm button {

@@ -328,10 +328,8 @@ section {
 .contactForm {
   display: flex;
   flex-direction: column;
-  background-color: #773a3c;
   width: 360px;
   gap: 16px;
-  border: #000000 solid;
   align-items: center;
 }
 
@@ -348,6 +346,10 @@ input,
   padding: 16px;
   width: 300px;
   display: flex;
+}
+
+#submitButton {
+  width: 150px;
 }
 
 #description {

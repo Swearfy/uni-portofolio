@@ -271,6 +271,19 @@ section {
   font-family: "Lilita One", cursive;
 }
 
+#resume {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#colapse {
+  height: 900px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
 /* Projects */
 
 .container-cards {

@@ -1,6 +1,7 @@
 const navBar = document.getElementById("navBar");
 const body = document.querySelector("body");
 const popup = document.getElementById("popup");
+const resumeContent = document.getElementById("colapse");
 
 document.getElementById("burgerButton").addEventListener("click", function () {
   navBar.style.width = "100%";
@@ -66,6 +67,15 @@ document.getElementById("email-profile").addEventListener("click", function () {
   setTimeout(() => {
     popup.classList.remove("emailAnim");
   }, 1500);
+});
+
+document.getElementById("resume-btn").addEventListener("click", function () {
+  if (resumeContent.style.display === "block") {
+    resumeContent.style.display = "none";
+  } else {
+    resumeContent.style.display = "block";
+    document.getElementById("resume-btn");
+  }
 });
 
 document.getElementById("project1").addEventListener("click", function () {

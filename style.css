@@ -451,11 +451,16 @@ footer {
     padding: 0px 32px;
   }
 
+  .container-cards {
+    width: 1200px;
+  }
+
   .project-card {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-areas: "image desc";
     width: 900px;
+    align-self: start;
   }
 
   .project-card:nth-child(2) {
@@ -463,6 +468,7 @@ footer {
     display: grid;
     flex-direction: row;
     justify-content: space-between;
+    align-self: flex-end;
   }
 
   .project-desc-right {
@@ -495,5 +501,17 @@ footer {
     flex-direction: column;
     grid-area: desc;
     gap: 20px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  main {
+    align-items: center;
+    justify-content: center;
+    padding: 0px 300px;
+  }
+
+  section {
+    width: 1200px;
   }
 }

@@ -275,6 +275,7 @@ section {
 
 .container-cards {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: #d8d2d2;
@@ -283,14 +284,14 @@ section {
 }
 
 .project-card {
-  max-width: 500px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 32px;
 }
 
 .projectImage {
-  max-width: 100%;
+  width: 350px;
 }
 
 .project-desc {
@@ -309,6 +310,7 @@ section {
   grid-row: 2;
   grid-template-columns: 1fr 1fr;
   gap: 6px;
+  margin-left: 12px;
 }
 
 .project-desc-right button {
@@ -437,5 +439,61 @@ footer {
   text-align: center;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 800px) {
+  .projectImage {
+    grid-area: image;
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  main {
+    padding: 0px 32px;
+  }
+
+  .project-card {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "image desc";
+    width: 900px;
+  }
+
+  .project-card:nth-child(2) {
+    direction: rtl;
+    display: grid;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .project-desc-right {
+    width: 200px;
+  }
+
+  .project-desc-right button {
+    width: 70px;
+  }
+
+  .project-desc-right .github-button img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .project-card:nth-child(2) .project-desc-right {
+    direction: ltr;
+  }
+
+  .project-card:nth-child(2) .project-desc-left {
+    direction: ltr;
+  }
+
+  .projectImage {
+    grid-area: image;
+    width: 500px;
+  }
+
+  .project-desc {
+    flex-direction: column;
+    grid-area: desc;
+    gap: 20px;
+  }
 }

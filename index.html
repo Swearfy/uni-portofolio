@@ -212,25 +212,27 @@
             </button>
             <span id="popup">Email Copied!</span>
           </div>
-          <form class="contactForm">
+          <form
+            class="contactForm"
+            action="https://formsubmit.co/swearfy@gmail.com"
+            method="POST">
             <div>
+              <input type="hidden" name="_next" value="#" />
               <label for="full-Name">Name</label>
-              <input id="full-Name" type="text" placeholder="Mark" required />
+              <input
+                id="full-Name"
+                name="name"
+                type="text"
+                placeholder="Mark"
+                required />
             </div>
             <div>
               <label for="email">Email</label>
               <input
                 id="email"
                 type="email"
+                name="email"
                 placeholder="Mark123@gmail.com"
-                required />
-            </div>
-            <div>
-              <label for="subject">Subject</label>
-              <input
-                id="subject"
-                type="text"
-                placeholder="I want you to"
                 required />
             </div>
             <div>
@@ -238,6 +240,7 @@
               <textarea
                 id="description"
                 placeholder="MAKE ME WEBSITE"
+                name="message"
                 required></textarea>
             </div>
             <button id="submitButton" type="submit">Send</button>

@@ -1,6 +1,9 @@
 fetch("/files/data.json")
   .then((response) => response.json())
-  .then((data) => uploadProjects(data));
+  .then((data) => uploadProjects(data))
+  .catch((error) => {
+    console.error("Error:", error);
+  });
 
 const githubURL = "https://github.com/Swearfy";
 const linkedinURL = "https://www.linkedin.com/in/dennispaulpuscasu/";

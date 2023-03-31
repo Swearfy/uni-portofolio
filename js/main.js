@@ -60,21 +60,33 @@ contactMeButton.addEventListener("click", function () {
 const mediaQuery = window.matchMedia(" (min-width: 700px)");
 let style;
 
-window.addEventListener("resize", function (e) {
-  checkMediaQuery(mediaQuery);
-});
+window.addEventListener(
+  "resize",
+  function (e) {
+    checkMediaQuery(mediaQuery);
+  },
+  true
+);
 
 function checkMediaQuery(mediaQuery) {
-  if (mediaQuery.matches) {
-    window.onresize = (e) => {
-      navBar.style.width = "100%";
-    };
-  } else if (!mediaQuery.matches) {
+  if (!mediaQuery.matches) {
     window.onresize = (e) => {
       navBar.style.width = "0%";
+      style = "0%";
     };
+    navBar.style.width = "0%";
+    style = "0%";
+  } else if (mediaQuery.matches) {
+    window.onresize = (e) => {
+      navBar.style.width = "100%";
+      style = "100%";
+    };
+    navBar.style.width = "100%";
+    style = "100%";
   }
 }
+
+checkMediaQuery(mediaQuery);
 
 homeButton.addEventListener("click", function () {
   document.getElementById("introPage").scrollIntoView({ behavior: "smooth" });

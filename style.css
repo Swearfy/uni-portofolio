@@ -141,7 +141,7 @@ section {
 }
 
 .name {
-  font-size: 6rem;
+  font-size: 4rem;
   text-align: center;
   animation: nameAnim ease-in-out 0.6s normal;
 }
@@ -301,10 +301,12 @@ section {
   flex-direction: column;
   align-items: center;
   gap: 32px;
+  width: 200px;
 }
 
 .projectImage {
-  width: 350px;
+  width: 300px;
+  object-fit: contain;
 }
 
 .project-desc {
@@ -376,7 +378,7 @@ section {
 }
 
 .contactForm button {
-  width: 300px;
+  width: 200px;
   margin-bottom: 16px;
   align-self: center;
 }
@@ -387,7 +389,7 @@ input,
   border: 0;
   color: #cac6c6;
   padding: 16px;
-  width: 300px;
+  width: 250px;
   display: flex;
 }
 
@@ -452,20 +454,21 @@ footer {
   text-align: center;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 750px) {
   .projectImage {
     grid-area: image;
     width: 400px;
+  }
+
+  input,
+  #description {
+    width: 300px;
   }
 }
 
 @media screen and (min-width: 1000px) {
   main {
     padding: 0px 32px;
-  }
-
-  .container-cards {
-    width: 1200px;
   }
 
   .project-card {
@@ -514,6 +517,10 @@ footer {
     flex-direction: column;
     grid-area: desc;
     gap: 20px;
+  }
+  input,
+  #description {
+    width: 350px;
   }
 }
 

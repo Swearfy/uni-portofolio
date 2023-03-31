@@ -2,51 +2,77 @@ fetch("/files/data.json")
   .then((response) => response.json())
   .then((data) => uploadProjects(data));
 
+const githubURL = "https://github.com/Swearfy";
+const linkedinURL = "https://www.linkedin.com/in/dennispaulpuscasu/";
+const email = "swearfy@gmail.com";
+
 const navBar = document.getElementById("navBar");
 const body = document.querySelector("body");
 const popup = document.getElementById("popup");
-const resumeContent = document.getElementById("colapse");
 const cardContainer = document.getElementById("container-cards");
 
-document.getElementById("burgerButton").addEventListener("click", function () {
+//burger buttons
+const burgerButton = document.getElementById("burgerButton");
+const burgerClose = document.getElementById("burgerClose");
+
+// navbar buttons
+const homeButton = document.getElementById("home-btn");
+const aboutButton = document.getElementById("about-btn");
+const projectsButton = document.getElementById("projects-btn");
+const contactButton = document.getElementById("contact-btn");
+
+// intro page buttons
+const scrollDownButton = document.getElementById("scrollDown");
+const contactMeButton = document.getElementById("contactMe-btn");
+
+// about me buttons and div
+const resumebutton = document.getElementById("resume-btn");
+const resumeContent = document.getElementById("colapse");
+
+// contact section buttons
+const githubProfile = document.getElementById("github-profile");
+const linkedinProfile = document.getElementById("linkedin-profile");
+const emailLink = document.getElementById("email-profile");
+
+burgerButton.addEventListener("click", function () {
   navBar.style.width = "100%";
   body.style.overflow = "hidden";
 });
 
-document.getElementById("burgerClose").addEventListener("click", function () {
+burgerClose.addEventListener("click", function () {
   navBar.style.width = "0%";
   body.style.overflow = "auto";
 });
 
-document.getElementById("scrollDown").addEventListener("click", function () {
+scrollDownButton.addEventListener("click", function () {
   document.getElementById("skills").scrollIntoView({ behavior: "smooth" });
 });
 
-document.getElementById("contactMe-btn").addEventListener("click", function () {
+contactMeButton.addEventListener("click", function () {
   document
     .getElementById("contact-Section")
     .scrollIntoView({ behavior: "smooth" });
 });
 
-document.getElementById("home-btn").addEventListener("click", function () {
+homeButton.addEventListener("click", function () {
   document.getElementById("introPage").scrollIntoView({ behavior: "smooth" });
   navBar.style.width = "0%";
   body.style.overflow = "auto";
 });
 
-document.getElementById("about-btn").addEventListener("click", function () {
+aboutButton.addEventListener("click", function () {
   document.getElementById("mySkills").scrollIntoView({ behavior: "smooth" });
   navBar.style.width = "0%";
   body.style.overflow = "auto";
 });
 
-document.getElementById("projects-btn").addEventListener("click", function () {
+projectsButton.addEventListener("click", function () {
   document.getElementById("projects").scrollIntoView({ behavior: "smooth" });
   navBar.style.width = "0%";
   body.style.overflow = "auto";
 });
 
-document.getElementById("contact-btn").addEventListener("click", function () {
+contactButton.addEventListener("click", function () {
   document
     .getElementById("contact-Section")
     .scrollIntoView({ behavior: "smooth" });
@@ -54,27 +80,22 @@ document.getElementById("contact-btn").addEventListener("click", function () {
   body.style.overflow = "auto";
 });
 
-document
-  .getElementById("github-profile")
-  .addEventListener("click", function () {
-    window.open("https://github.com/Swearfy");
-  });
+githubProfile.addEventListener("click", function () {
+  window.open(githubURL);
+});
 
-document
-  .getElementById("linkedin-profile")
-  .addEventListener("click", function () {
-    window.open("https://www.linkedin.com/in/dennispaulpuscasu/");
-  });
-
-document.getElementById("email-profile").addEventListener("click", function () {
+linkedinProfile.addEventListener("click", function () {
+  window.open(linkedinURL);
+});
+emailLink.addEventListener("click", function () {
   popup.classList.add("emailAnim");
-  navigator.clipboard.writeText("swearfy@gmail.com");
+  navigator.clipboard.writeText(email);
   setTimeout(() => {
     popup.classList.remove("emailAnim");
   }, 1500);
 });
 
-document.getElementById("resume-btn").addEventListener("click", function () {
+resumebutton.addEventListener("click", function () {
   if (resumeContent.style.display === "block") {
     resumeContent.style.display = "none";
   } else {

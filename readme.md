@@ -1,27 +1,21 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=9881916&assignment_repo_type=AssignmentRepo)
-# CTEC3905 ASSIGNMENT
 
-Welcome. This is your assignment repository.
+# Welcome to my project 🦊
 
-In this file, we will expect a brief description of your project in [markdown](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) format.
-Try to keep it to a maximum of about 300 words.
-Though shorter is no problem.
+## Personal Portofolio
 
-The description should include a summary of your site content and the primary audience you are targeting.
-Also include a brief description of how you have organised the content (a few sentences is fine) for the audience.
-Make some specific reference to how you have adapted your site for different screen sizes.
+### Description
 
-If there are any parts of your code or user interface that need further explanation, you can include that here.
-If anything is broken or doesn't quite work properly, you may explain what it SHOULD do.
+I created a portfolio project that functions flawlessly on all devices and is particularly targeted at recruiters. The website is incredibly responsive and user-friendly thanks to a mobile-first strategy and thoughtfully placed breakpoints.
 
-You **must** include references (including links) to any external resources/videos/code examples that you have used here.
+I'm loading the projects from a JSON file for increased freedom, and I've made an object inside the container for content display. This makes it simple for me to add new projects or make adjustments without having to code. Additionally, I added a URL check for the live code, so if it's not accessible, the source code will be shown.
 
-## Things to do
+Additionally, I drew a background using the Canvas API to give the content depth and a captivating visual allure.
 
-- Replace the content inside [index.html](index.html) with your own structured HTML.
-- Replace the [replaceme.css](replaceme.css) and [replaceme.js](js/replaceme.js) files with your own files.
-- Update the `<link>` and `<script>` elements to point to your new files.
-- Replace the contents of this file (readme.md) with your own short project description as detailed above.
+With media query breakpoints set at 700, 1000, and 1300px, the website is optimised for screens with resolutions ranging from 320px to 4k, enabling a flawless layout on different devices.
 
->We don't expect there to be much left of the original content in these files once you are done.
-It should be all your own code.
+Referances:
+
+- https://fonts.google.com/specimen/Roboto+Mono
+- https://fontawesome.com/
+- https://iconscout.com/

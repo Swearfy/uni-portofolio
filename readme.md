@@ -14,7 +14,7 @@ Additionally, I drew a background using the Canvas API to give the content depth
 
 With media query breakpoints set at 700, 1000, and 1300px, the website is optimised for screens with resolutions ranging from 320px to 4k, enabling a flawless layout on different devices.
 
-Referances:
+References:
 
 - https://fonts.google.com/specimen/Roboto+Mono
 - https://fontawesome.com/

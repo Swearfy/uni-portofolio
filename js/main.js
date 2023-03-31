@@ -57,30 +57,48 @@ contactMeButton.addEventListener("click", function () {
     .scrollIntoView({ behavior: "smooth" });
 });
 
+const mediaQuery = window.matchMedia(" (min-width: 700px)");
+let style;
+
+window.addEventListener("resize", function (e) {
+  checkMediaQuery(mediaQuery);
+});
+
+function checkMediaQuery(mediaQuery) {
+  if (mediaQuery.matches) {
+    window.onresize = (e) => {
+      navBar.style.width = "100%";
+    };
+  } else if (!mediaQuery.matches) {
+    window.onresize = (e) => {
+      navBar.style.width = "0%";
+    };
+  }
+}
+
 homeButton.addEventListener("click", function () {
   document.getElementById("introPage").scrollIntoView({ behavior: "smooth" });
-  navBar.style.width = "0%";
+  navBar.style.width = style;
   body.style.overflow = "auto";
 });
 
 aboutButton.addEventListener("click", function () {
   document.getElementById("mySkills").scrollIntoView({ behavior: "smooth" });
-  navBar.style.width = "0%";
+  navBar.style.width = style;
   body.style.overflow = "auto";
 });
 
 projectsButton.addEventListener("click", function () {
   document.getElementById("projects").scrollIntoView({ behavior: "smooth" });
-  navBar.style.width = "0%";
+  navBar.style.width = style;
   body.style.overflow = "auto";
 });
-
 contactButton.addEventListener("click", function () {
   document
     .getElementById("contact-Section")
     .scrollIntoView({ behavior: "smooth" });
-  navBar.style.width = "0%";
-  body.style.overflow = "auto";
+  navBar.style.width = style;
+  body.style.overflow = "style";
 });
 
 githubProfile.addEventListener("click", function () {

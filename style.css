@@ -265,6 +265,7 @@ section {
 .container-about div {
   display: flex;
   justify-content: space-between;
+  font-size: 1.4rem;
 }
 
 .container-about h1 {

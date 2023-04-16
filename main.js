@@ -39,6 +39,8 @@ const githubProfile = document.getElementById("github-profile");
 const linkedinProfile = document.getElementById("linkedin-profile");
 const emailLink = document.getElementById("email-profile");
 
+const formSubmit = document.getElementById("submitButton");
+
 burgerButton.addEventListener("click", function () {
   navBar.style.width = "100%";
   body.style.overflow = "hidden";
@@ -141,6 +143,14 @@ resumebutton.addEventListener("click", function () {
   }
 });
 
+formSubmit.addEventListener("click", function () {
+  document.getElementById("email-confirm").style.display = "block";
+  setTimeout(() => {
+    document.getElementById("email-confirm").style.display = "none";
+  }, 1500);
+});
+
+// Loading and uploading projects in the project section
 function uploadProjects(data) {
   data.forEach((element) => {
     const projectCard = createProject(element);

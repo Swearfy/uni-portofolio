@@ -130,7 +130,7 @@
           </p>
         </div>
       </section>
-      <section id="project-Section"">
+      <section id="project-Section">
         <h1 id="projects" class="sectionTitle">Projects</h1>
         <div id="container-cards"></div>
       </section>
@@ -152,26 +152,17 @@
             </button>
             <span id="popup">Email Copied!</span>
           </div>
-          <form
-            class="contactForm"
-            action="https://formsubmit.co/swearfy@gmail.com"
-            method="POST">
+          <form class="contactForm">
             <div>
               <input type="hidden" name="_next" value="#" />
               <label for="full-Name">Name</label>
-              <input
-                id="full-Name"
-                name="name"
-                type="text"
-                placeholder="Mark"
-                required />
+              <input id="full-Name" type="text" placeholder="Mark" required />
             </div>
             <div>
               <label for="email">Email</label>
               <input
                 id="email"
                 type="email"
-                name="email"
                 placeholder="Mark123@gmail.com"
                 required />
             </div>
@@ -180,10 +171,10 @@
               <textarea
                 id="description"
                 placeholder="MAKE ME WEBSITE"
-                name="message"
                 required></textarea>
             </div>
-            <button id="submitButton" type="submit">Send</button>
+            <span id="email-confirm">Message was sent!</span>
+            <button id="submitButton" type="reset">Send</button>
           </form>
         </div>
       </section>

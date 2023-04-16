@@ -3,24 +3,32 @@
     "title": "2D Side-View JavaScript Game",
     "description": "2D Side-View Shooting game made using JavaScript and the Canvas Api",
     "img": "./img/placeholder.jpg",
-    "alt": "placeholder",
+    "alt": "image of game",
     "url": "https://github.com/Swearfy/Project-GameV2",
     "liveUrl": ""
   },
   {
-    "title": "2D Side-View JavaScript Game",
-    "description": "2D Side-View Shooting game made using JavaScript and the Canvas Api",
-    "img": "./img/placeholder.jpg",
-    "alt": "placeholder",
-    "url": "https://github.com/Swearfy/Project-GameV2",
+    "title": "Front End Development – Personal Portfolio",
+    "description": "Utilized Figma during the design process and employed JavaScript, CSS, and HTML to develop a personal portfolio website.",
+    "img": "./img/projects/portofolio.png",
+    "alt": "image of portofolio",
+    "url": "#",
     "liveUrl": ""
   },
   {
-    "title": "2D Side-View JavaScript Game",
-    "description": "2D Side-View Shooting game made using JavaScript and the Canvas Api",
-    "img": "./img/placeholder.jpg",
-    "alt": "placeholder",
-    "url": "https://github.com/Swearfy/Project-GameV2",
+    "title": "Mobile App Development – Survey Android App",
+    "description": "Built an Android survey app with Kotlin and Android Studio, featuring a local SQL database that enables staff to create surveys and receive interactive feedback in the form of graphs based on student responses.",
+    "img": "./img/projects/surveyapp.png",
+    "alt": "image of survey app",
+    "url": "https://github.com/Swearfy/SurveyApp",
+    "liveUrl": ""
+  },
+  {
+    "title": "Object-Oriented Programming – Module Picker",
+    "description": "Created a JavaFX-based application with a GUI interface, which requires user accounts and enables final year module selection based on the chosen course.",
+    "img": "./img/projects/modulepicker.png",
+    "alt": "image of module picker",
+    "url": "https://github.com/Swearfy/Module_Chooser",
     "liveUrl": ""
   }
 ]

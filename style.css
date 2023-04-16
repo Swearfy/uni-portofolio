@@ -203,6 +203,7 @@ section {
 }
 
 #scroll-btn-box {
+  display: grid;
   animation: buttonPop ease-in-out 0.6s normal;
 }
 #scroll-btn-box,

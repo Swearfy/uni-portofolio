@@ -1,3 +1,5 @@
+import { Effect } from "./js/effect.js";
+
 fetch("/files/data.json")
   .then((response) => response.json())
   .then((data) => uploadProjects(data))
@@ -48,7 +50,9 @@ burgerClose.addEventListener("click", function () {
 });
 
 scrollDownButton.addEventListener("click", function () {
-  document.getElementById("skills").scrollIntoView({ behavior: "smooth" });
+  document
+    .getElementById("project-Section")
+    .scrollIntoView({ behavior: "smooth" });
 });
 
 contactMeButton.addEventListener("click", function () {
@@ -223,116 +227,6 @@ const ctx = canvas.getContext("2d");
 let previouseTime;
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
-
-class Particle {
-  constructor(effect) {
-    this.effect = effect;
-    this.x = Math.floor(Math.random() * 2);
-    this.y = Math.floor(Math.random() * 2);
-    this.height = Math.random() * 5;
-    this.width = Math.random() * 5;
-    this.speedX = Math.random() * 2;
-    this.speedY = Math.random() * 2;
-    this.speed = Math.floor(Math.random() * 10);
-    this.path = [{ x: this.x, y: this.y }];
-    this.max = Math.floor(Math.random() * 200);
-    this.angle = 0;
-    this.timer = this.max * 2;
-  }
-  update(delta) {
-    this.timer--;
-    if (this.timer >= 1) {
-      let x = Math.floor(this.x / this.effect.cellSize);
-      let y = Math.floor(this.y / this.effect.cellSize);
-      let index = y * particles.cols + x;
-      this.angle = particles.flow[index];
-
-      this.speedX = Math.cos(this.angle) * this.speed;
-      this.speedY = Math.sin(this.angle) * this.speed;
-
-      this.x += this.speedX * delta * this.speed;
-      this.y += this.speedY * delta * this.speed;
-      this.path.push({ x: this.x, y: this.y });
-
-      if (this.path.length > this.max) {
-        this.path.shift();
-      }
-    } else if (this.path.length > 1) {
-      this.path.shift();
-    } else {
-      this.reset();
-    }
-  }
-  draw(ctx) {
-    ctx.beginPath();
-    ctx.fill();
-    ctx.moveTo(this.path[0].x, this.path[0].y);
-
-    for (let i = 0; i < this.path.length; i++) {
-      ctx.lineTo(this.path[i].x, this.path[i].y);
-    }
-    ctx.stroke();
-  }
-  reset() {
-    this.x = Math.random() * canvas.width;
-    this.y = Math.random() * canvas.height;
-    this.path = [{ x: this.x, y: this.y }];
-    this.timer = this.max * 2;
-  }
-}
-
-class Effect {
-  constructor(canvas) {
-    this.canvas = canvas;
-    this.width = this.canvas.width;
-    this.height = this.canvas.height;
-    this.particleArray = [];
-    this.particle = new Particle();
-    this.particleNumber = 100;
-    this.cellSize = 20;
-    this.rows;
-    this.cols;
-    this.flow = [];
-    this.init();
-
-    window.addEventListener("resize", (e) => {
-      this.resizeBy(e.target.innerWidth, e.target.innerHeight);
-    });
-  }
-  init() {
-    this.rows = Math.floor(this.height / this.cellSize);
-    this.cols = Math.floor(this.width / this.cellSize);
-    this.flow = [];
-
-    for (let y = 0; y < this.rows; y++) {
-      for (let x = 0; x < this.cols; x++) {
-        let angle = (Math.cos(x) + Math.sin(y)) * (Math.random() * 5);
-        this.flow.push(angle);
-      }
-    }
-
-    for (let i = 0; i < this.particleNumber; i++) {
-      this.particleArray.push(new Particle(this));
-    }
-  }
-  resizeBy(width, height) {
-    this.canvas.width = width;
-    this.canvas.height = height;
-    this.width = canvas.width;
-    this.height = canvas.height;
-  }
-  update(delta) {
-    this.particleArray.forEach((particle) => {
-      particle.update(delta);
-    });
-  }
-  draw(ctx) {
-    this.particleArray.forEach((particle) => {
-      particle.draw(ctx);
-    });
-    this.particle.draw(ctx);
-  }
-}
 
 const particles = new Effect(canvas);
 

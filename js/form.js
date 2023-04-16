@@ -1,8 +1,10 @@
-const formSubmit = document.getElementById("submitButton");
+export function submitButtonFeedBack() {
+  const formSubmit = document.getElementById("submitButton");
 
-formSubmit.addEventListener("click", () => {
-  document.getElementById("email-confirm").style.display = "block";
-  setTimeout(() => {
-    document.getElementById("email-confirm").style.display = "none";
-  }, 1500);
-});
+  formSubmit.addEventListener("click", () => {
+    document.getElementById("email-confirm").style.display = "block";
+    setTimeout(() => {
+      document.getElementById("email-confirm").style.display = "none";
+    }, 1500);
+  });
+}

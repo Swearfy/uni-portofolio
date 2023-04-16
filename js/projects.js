@@ -1,9 +1,11 @@
-fetch("/files/data.json")
-  .then((response) => response.json())
-  .then((data) => uploadProjects(data))
-  .catch((error) => {
-    console.error("Error:", error);
-  });
+export function setUpProjects() {
+  fetch("/files/data.json")
+    .then((response) => response.json())
+    .then((data) => uploadProjects(data))
+    .catch((error) => {
+      console.error("Error:", error);
+    });
+}
 
 const cardContainer = document.getElementById("container-cards");
 

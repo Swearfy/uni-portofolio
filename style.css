@@ -320,8 +320,13 @@ section {
 }
 
 .projectImage {
+  /* aspect-ratio: 16/9; */
   width: 250px;
-  object-fit: contain;
+  object-fit: fill;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border: 1px solid black;
 }
 
 .project-desc {
@@ -542,7 +547,7 @@ footer {
     align-self: start;
   }
 
-  .project-card:nth-child(2) {
+  .project-card:nth-child(2n) {
     direction: rtl;
     display: grid;
     flex-direction: row;
@@ -563,11 +568,11 @@ footer {
     height: 50px;
   }
 
-  .project-card:nth-child(2) .project-desc-right {
+  .project-card:nth-child(2n) .project-desc-right {
     direction: ltr;
   }
 
-  .project-card:nth-child(2) .project-desc-left {
+  .project-card:nth-child(2n) .project-desc-left {
     direction: ltr;
   }
 

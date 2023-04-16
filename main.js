@@ -17,14 +17,14 @@ let previouseTime;
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-const particles = new Effect(canvas);
+const background = new Effect(canvas);
 
 function animate(currentTime) {
   const delta = currentTime - previouseTime;
   previouseTime = currentTime;
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-  particles.update(delta);
-  particles.draw(ctx);
+  background.update(delta);
+  background.draw(ctx);
   requestAnimationFrame(animate);
 }
 

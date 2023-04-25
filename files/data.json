@@ -1,7 +1,7 @@
 [
   {
     "title": "2D Side-View JavaScript Game",
-    "description": "2D Side-View Shooting game made using JavaScript and the Canvas Api",
+    "description": " 2D Side-View Shooting game is a classic genre of video game that has been enjoyed by players for decades. With the power of modern web technologies like JavaScript and the Canvas API, it is now easier than ever to create engaging and immersive games that can be played right in the browser.",
     "img": "./img/gameimage.png",
     "alt": "image of game",
     "url": "https://github.com/Swearfy/Project-GameV2",

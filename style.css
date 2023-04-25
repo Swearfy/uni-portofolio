@@ -290,6 +290,10 @@ section {
   position: relative;
 }
 
+#resume-btn {
+  background-color: #c92222;
+}
+
 #collapse {
   height: 900px;
   display: none;

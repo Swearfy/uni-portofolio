@@ -1,7 +1,7 @@
 export function loadResume() {
   // about me buttons and div
   const resumebutton = document.getElementById("resume-btn");
-  const resumeContent = document.getElementById("colapse");
+  const resumeContent = document.getElementById("collapse");
 
   resumebutton.addEventListener("click", () => {
     if (resumeContent.style.display === "block") {

@@ -290,7 +290,7 @@ section {
   position: relative;
 }
 
-#colapse {
+#collapse {
   height: 900px;
   display: none;
   overflow: hidden;

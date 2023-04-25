@@ -2,7 +2,7 @@
 
 # Welcome to my project 🦊
 
-## Personal Portofolio
+## Personal Portfolio
 
 ### Description
 
@@ -12,7 +12,7 @@ I'm loading the projects from a JSON file for increased freedom, and I've made a
 
 Additionally, I drew a background using the Canvas API to give the content depth and a captivating visual allure.
 
-With media query breakpoints set at 700, 1000, and 1300px, the website is optimised for screens with resolutions ranging from 320px to 4k, enabling a flawless layout on different devices.
+With media query breakpoints set at 700, 1000, and 1300px, the website is optimized for screens with resolutions ranging from 320px to 4k, enabling a flawless layout on different devices.
 
 References:
 

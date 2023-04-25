@@ -2,7 +2,7 @@
   {
     "title": "2D Side-View JavaScript Game",
     "description": "2D Side-View Shooting game made using JavaScript and the Canvas Api",
-    "img": "./img/placeholder.jpg",
+    "img": "./img/gameimage.png",
     "alt": "image of game",
     "url": "https://github.com/Swearfy/Project-GameV2",
     "liveUrl": ""

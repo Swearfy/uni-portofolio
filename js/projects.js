@@ -62,7 +62,7 @@ function createProjectDesc(element) {
   });
 
   const buttonImg = document.createElement("img");
-  buttonImg.src = "/img/github.svg";
+  buttonImg.src = "./img/github.svg";
   buttonImg.alt = "github logo";
 
   githubButton.appendChild(buttonImg);

@@ -2,6 +2,8 @@
 
 ## Personal Portfolio
 
+### Open Here https://swearfy.github.io/uni-portofolio/
+
 ### Description
 
 I created a portfolio project that functions flawlessly on all devices and is particularly targeted at recruiters. The website is incredibly responsive and user-friendly thanks to a mobile-first strategy and thoughtfully placed breakpoints.

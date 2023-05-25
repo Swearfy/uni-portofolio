@@ -1,5 +1,5 @@
 export function setUpProjects() {
-  fetch("/files/data.json")
+  fetch("./files/data.json")
     .then((response) => response.json())
     .then((data) => uploadProjects(data))
     .catch((error) => {
